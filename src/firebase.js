@@ -1,10 +1,10 @@
 
-import firebase from "firebase/compat/app"
+import initialize  from "firebase/app"
 import { updateProfile,getAuth,onAuthStateChanged } from "firebase/auth";
 import { getFirestore,doc,setDoc,collection, query, where,onSnapshot } from "firebase/firestore";
-import 'firebase/compat/auth'
+import 'firebase/auth'
 
-const app = firebase.initializeApp({
+const app = initializeApp({
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
